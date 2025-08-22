@@ -1,0 +1,31 @@
+name: HouseholdTasks
+options:
+  bundleIdPrefix: com.yourcompany
+targets:
+  HouseholdTasks:
+    type: application
+    platform: iOS
+    deploymentTarget: "16.0"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.yourcompany.HouseholdTasks
+        INFOPLIST_FILE: Info.plist
+        CODE_SIGN_ENTITLEMENTS: HouseholdTasks.entitlements
+    sources:
+      - path: .
+    resources:
+      - path: HouseholdTasks.xcdatamodeld
+    dependencies:
+      - target: HouseholdTasksWidget
+        embed: true
+
+  HouseholdTasksWidget:
+    type: app-extension
+    platform: iOS
+    deploymentTarget: "16.0"
+    sources:
+      - path: ../HouseholdTasksWidget
+    settings:
+      base:
+        INFOPLIST_FILE: ../HouseholdTasksWidget/Info.plist
+        PRODUCT_BUNDLE_IDENTIFIER: com.yourcompany.HouseholdTasks.widget

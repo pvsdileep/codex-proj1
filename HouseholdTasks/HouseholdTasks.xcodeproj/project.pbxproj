@@ -1,0 +1,614 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 63;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		001282D390A70E3DE90D64C8 /* AssigneeBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3385B19BD5AA1CC7B4606CF5 /* AssigneeBadge.swift */; };
+		136ED8077ABF8E24B1F66D21 /* ListEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC9BF89421AE98AFF3AFD5B /* ListEntity+CoreDataProperties.swift */; };
+		26307FA7732969195B91EF50 /* TasksWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36ED2495AB2F577BB5408BEE /* TasksWidgetBundle.swift */; };
+		2CEAD8647774DE417DE1F3C2 /* TaskRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E061E2C89F8318F64B924594 /* TaskRow.swift */; };
+		52A1F2C6C79C7F5830B67ACB /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8928EEE9D09F33AF79C758A /* PersistenceController.swift */; };
+		5E1E28DE205B6AE084DFE454 /* TaskEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9469BF5881C4D4C88E0277E4 /* TaskEditView.swift */; };
+		6A8E4CD3179747D25CF0B396 /* HouseholdTasks.xcodeproj in Resources */ = {isa = PBXBuildFile; fileRef = 8023607D7E412A4A04D120F9 /* HouseholdTasks.xcodeproj */; };
+		75049C92EA900E590D703290 /* TodoTask+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2918D72459F9102A52039D44 /* TodoTask+CoreDataProperties.swift */; };
+		769518E214B774E47ABA9F5A /* project.yml in Resources */ = {isa = PBXBuildFile; fileRef = 9511DC6C28F9784FED7FBB8B /* project.yml */; };
+		77EEC55E2B1BB0C724BBAF74 /* MyDayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C36B408850E4DACF7D2B4C /* MyDayView.swift */; };
+		8011F99F755AE78AC168A937 /* HouseholdTasksApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8A9AD9E100D9774137CEC0 /* HouseholdTasksApp.swift */; };
+		810C9F3138715444B07BA61C /* HouseholdTasksWidget.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 82DCF32ABAF4F7EE400341D5 /* HouseholdTasksWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		9681118CBE025F5562AB5647 /* CloudShareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A71659B6A0A0D4BC8DAF475 /* CloudShareView.swift */; };
+		98715B99B398FEA8B9AFC042 /* HouseholdTasks.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B843D439D17A3A9F0038BEC2 /* HouseholdTasks.xcdatamodeld */; };
+		AB3AA92B3D2A28573CF583FA /* TodoTask+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D8604628FBFB66480CC7DF /* TodoTask+CoreDataClass.swift */; };
+		AB7C26A73032979A1143DF4D /* TasksWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243DB28765940E82AF4C5CD6 /* TasksWidget.swift */; };
+		BBF5D32DB8D2BD7651E63099 /* SharedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC788F67A0FC2084F51BE26 /* SharedView.swift */; };
+		C41FB6063A9578E1F6A45D42 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8DF587D06D8D30F537A914B /* RootView.swift */; };
+		CF7422E4C94E9EAFE9D22276 /* PriorityBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212A7682D0978194EC1AF4E2 /* PriorityBadge.swift */; };
+		CF7FB26B9C20CE0688504D2F /* NotificationScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B9065BBAA639E042ABFE09 /* NotificationScheduler.swift */; };
+		D37EC0096A21F7A2A778FB43 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 0BADE347CC90F0B16C96AA07 /* README.md */; };
+		DBC087F43085AF72E395A0D2 /* ListEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77CBBDC4F5D64092DD40BB9B /* ListEntity+CoreDataClass.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AC4078B47BAA5782CA0F0D15 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1D1510E1CABA8057F295E9C3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF080F38A09698DE1F69A951;
+			remoteInfo = HouseholdTasksWidget;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F2E004978BB67B6345AD56AB /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				810C9F3138715444B07BA61C /* HouseholdTasksWidget.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		02486F9B8318DB567C20AC13 /* HouseholdTasks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HouseholdTasks.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A0D0BBAE0BD55313E86F0F7 /* HouseholdTasks.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HouseholdTasks.xcdatamodel; sourceTree = "<group>"; };
+		0BADE347CC90F0B16C96AA07 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		14D8604628FBFB66480CC7DF /* TodoTask+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TodoTask+CoreDataClass.swift"; sourceTree = "<group>"; };
+		212A7682D0978194EC1AF4E2 /* PriorityBadge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriorityBadge.swift; sourceTree = "<group>"; };
+		243DB28765940E82AF4C5CD6 /* TasksWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksWidget.swift; sourceTree = "<group>"; };
+		2918D72459F9102A52039D44 /* TodoTask+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TodoTask+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		3385B19BD5AA1CC7B4606CF5 /* AssigneeBadge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssigneeBadge.swift; sourceTree = "<group>"; };
+		36ED2495AB2F577BB5408BEE /* TasksWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksWidgetBundle.swift; sourceTree = "<group>"; };
+		43C9DA61047879785B68CE3D /* HouseholdTasks.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HouseholdTasks.entitlements; sourceTree = "<group>"; };
+		4BF3D9166FC9A7640F223FB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		63C36B408850E4DACF7D2B4C /* MyDayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyDayView.swift; sourceTree = "<group>"; };
+		66B9065BBAA639E042ABFE09 /* NotificationScheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationScheduler.swift; sourceTree = "<group>"; };
+		6A71659B6A0A0D4BC8DAF475 /* CloudShareView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudShareView.swift; sourceTree = "<group>"; };
+		77CBBDC4F5D64092DD40BB9B /* ListEntity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ListEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
+		8023607D7E412A4A04D120F9 /* HouseholdTasks.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = HouseholdTasks.xcodeproj; sourceTree = "<group>"; };
+		82DCF32ABAF4F7EE400341D5 /* HouseholdTasksWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = HouseholdTasksWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		9469BF5881C4D4C88E0277E4 /* TaskEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskEditView.swift; sourceTree = "<group>"; };
+		9511DC6C28F9784FED7FBB8B /* project.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = project.yml; sourceTree = "<group>"; };
+		B8928EEE9D09F33AF79C758A /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
+		B8DF587D06D8D30F537A914B /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		BF8A9AD9E100D9774137CEC0 /* HouseholdTasksApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseholdTasksApp.swift; sourceTree = "<group>"; };
+		DEC788F67A0FC2084F51BE26 /* SharedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedView.swift; sourceTree = "<group>"; };
+		E061E2C89F8318F64B924594 /* TaskRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskRow.swift; sourceTree = "<group>"; };
+		EEC9BF89421AE98AFF3AFD5B /* ListEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ListEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		F16026F0709CABC24418C71A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		0982CF7636ACCB030B25BA87 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				BCE8426072E91F4884B1FE3B /* Common */,
+				DA6A520EA57BD14EBD72815B /* Edit */,
+				42B26315F02D3B42310E46F9 /* MyDay */,
+				EB69857C78F83B55D7F2363D /* Shared */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		1FABBAFBEB93287EF1256D45 /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+				66B9065BBAA639E042ABFE09 /* NotificationScheduler.swift */,
+			);
+			path = Notifications;
+			sourceTree = "<group>";
+		};
+		42B26315F02D3B42310E46F9 /* MyDay */ = {
+			isa = PBXGroup;
+			children = (
+				63C36B408850E4DACF7D2B4C /* MyDayView.swift */,
+			);
+			path = MyDay;
+			sourceTree = "<group>";
+		};
+		54F4BEFD969F4FE62272C428 /* Sharing */ = {
+			isa = PBXGroup;
+			children = (
+				6A71659B6A0A0D4BC8DAF475 /* CloudShareView.swift */,
+			);
+			path = Sharing;
+			sourceTree = "<group>";
+		};
+		56556182770F584B0A641DD0 /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				B8928EEE9D09F33AF79C758A /* PersistenceController.swift */,
+			);
+			path = Persistence;
+			sourceTree = "<group>";
+		};
+		726F7C8E2E5561E80049644E /* Products */ = {
+			isa = PBXGroup;
+			name = Products;
+			sourceTree = "<group>";
+		};
+		93CF5202541BFD4DBD89692D = {
+			isa = PBXGroup;
+			children = (
+				E919E48B20BAD973CD13FC11 /* App */,
+				FA59E8DD9C9C2B3F0241E206 /* Data */,
+				0982CF7636ACCB030B25BA87 /* Features */,
+				9C2D1E955088013944BB5801 /* HouseholdTasks */,
+				9B47C2C9C77B83B85956D05C /* HouseholdTasksWidget */,
+				A30707E33182B8018C62F7C4 /* Models */,
+				BEF8E2D31B6642841341C90A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9B47C2C9C77B83B85956D05C /* HouseholdTasksWidget */ = {
+			isa = PBXGroup;
+			children = (
+				4BF3D9166FC9A7640F223FB4 /* Info.plist */,
+				243DB28765940E82AF4C5CD6 /* TasksWidget.swift */,
+				36ED2495AB2F577BB5408BEE /* TasksWidgetBundle.swift */,
+			);
+			name = HouseholdTasksWidget;
+			path = ../HouseholdTasksWidget;
+			sourceTree = "<group>";
+		};
+		9C2D1E955088013944BB5801 /* HouseholdTasks */ = {
+			isa = PBXGroup;
+			children = (
+				43C9DA61047879785B68CE3D /* HouseholdTasks.entitlements */,
+				B843D439D17A3A9F0038BEC2 /* HouseholdTasks.xcdatamodeld */,
+				8023607D7E412A4A04D120F9 /* HouseholdTasks.xcodeproj */,
+				F16026F0709CABC24418C71A /* Info.plist */,
+				9511DC6C28F9784FED7FBB8B /* project.yml */,
+				0BADE347CC90F0B16C96AA07 /* README.md */,
+			);
+			name = HouseholdTasks;
+			path = .;
+			sourceTree = "<group>";
+		};
+		A30707E33182B8018C62F7C4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				77CBBDC4F5D64092DD40BB9B /* ListEntity+CoreDataClass.swift */,
+				EEC9BF89421AE98AFF3AFD5B /* ListEntity+CoreDataProperties.swift */,
+				14D8604628FBFB66480CC7DF /* TodoTask+CoreDataClass.swift */,
+				2918D72459F9102A52039D44 /* TodoTask+CoreDataProperties.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BCE8426072E91F4884B1FE3B /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				3385B19BD5AA1CC7B4606CF5 /* AssigneeBadge.swift */,
+				212A7682D0978194EC1AF4E2 /* PriorityBadge.swift */,
+				E061E2C89F8318F64B924594 /* TaskRow.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		BEF8E2D31B6642841341C90A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				02486F9B8318DB567C20AC13 /* HouseholdTasks.app */,
+				82DCF32ABAF4F7EE400341D5 /* HouseholdTasksWidget.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DA6A520EA57BD14EBD72815B /* Edit */ = {
+			isa = PBXGroup;
+			children = (
+				9469BF5881C4D4C88E0277E4 /* TaskEditView.swift */,
+			);
+			path = Edit;
+			sourceTree = "<group>";
+		};
+		E919E48B20BAD973CD13FC11 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				BF8A9AD9E100D9774137CEC0 /* HouseholdTasksApp.swift */,
+				B8DF587D06D8D30F537A914B /* RootView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		EB69857C78F83B55D7F2363D /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				DEC788F67A0FC2084F51BE26 /* SharedView.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		FA59E8DD9C9C2B3F0241E206 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				1FABBAFBEB93287EF1256D45 /* Notifications */,
+				56556182770F584B0A641DD0 /* Persistence */,
+				54F4BEFD969F4FE62272C428 /* Sharing */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2B0EBADB33F6C5769F12A02A /* HouseholdTasks */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7802395E1215760A386307CF /* Build configuration list for PBXNativeTarget "HouseholdTasks" */;
+			buildPhases = (
+				D3B860172358CC3E0C2B3C3D /* Sources */,
+				8D52E30DC16D16F426917C8F /* Resources */,
+				F2E004978BB67B6345AD56AB /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4BE7DDE5E45E58A3DA134A95 /* PBXTargetDependency */,
+			);
+			name = HouseholdTasks;
+			packageProductDependencies = (
+			);
+			productName = HouseholdTasks;
+			productReference = 02486F9B8318DB567C20AC13 /* HouseholdTasks.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CF080F38A09698DE1F69A951 /* HouseholdTasksWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 895158A3161B4892FA422A7B /* Build configuration list for PBXNativeTarget "HouseholdTasksWidget" */;
+			buildPhases = (
+				EBC022ECDF5050755739D5AF /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HouseholdTasksWidget;
+			packageProductDependencies = (
+			);
+			productName = HouseholdTasksWidget;
+			productReference = 82DCF32ABAF4F7EE400341D5 /* HouseholdTasksWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1D1510E1CABA8057F295E9C3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1640;
+			};
+			buildConfigurationList = 19C5228533A364EA67E8E7AA /* Build configuration list for PBXProject "HouseholdTasks" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 93CF5202541BFD4DBD89692D;
+			minimizedProjectReferenceProxies = 1;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 726F7C8E2E5561E80049644E /* Products */;
+					ProjectRef = 8023607D7E412A4A04D120F9 /* HouseholdTasks.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				2B0EBADB33F6C5769F12A02A /* HouseholdTasks */,
+				CF080F38A09698DE1F69A951 /* HouseholdTasksWidget */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D52E30DC16D16F426917C8F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A8E4CD3179747D25CF0B396 /* HouseholdTasks.xcodeproj in Resources */,
+				D37EC0096A21F7A2A778FB43 /* README.md in Resources */,
+				769518E214B774E47ABA9F5A /* project.yml in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D3B860172358CC3E0C2B3C3D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				001282D390A70E3DE90D64C8 /* AssigneeBadge.swift in Sources */,
+				9681118CBE025F5562AB5647 /* CloudShareView.swift in Sources */,
+				98715B99B398FEA8B9AFC042 /* HouseholdTasks.xcdatamodeld in Sources */,
+				8011F99F755AE78AC168A937 /* HouseholdTasksApp.swift in Sources */,
+				DBC087F43085AF72E395A0D2 /* ListEntity+CoreDataClass.swift in Sources */,
+				136ED8077ABF8E24B1F66D21 /* ListEntity+CoreDataProperties.swift in Sources */,
+				77EEC55E2B1BB0C724BBAF74 /* MyDayView.swift in Sources */,
+				CF7FB26B9C20CE0688504D2F /* NotificationScheduler.swift in Sources */,
+				52A1F2C6C79C7F5830B67ACB /* PersistenceController.swift in Sources */,
+				CF7422E4C94E9EAFE9D22276 /* PriorityBadge.swift in Sources */,
+				C41FB6063A9578E1F6A45D42 /* RootView.swift in Sources */,
+				BBF5D32DB8D2BD7651E63099 /* SharedView.swift in Sources */,
+				5E1E28DE205B6AE084DFE454 /* TaskEditView.swift in Sources */,
+				2CEAD8647774DE417DE1F3C2 /* TaskRow.swift in Sources */,
+				AB3AA92B3D2A28573CF583FA /* TodoTask+CoreDataClass.swift in Sources */,
+				75049C92EA900E590D703290 /* TodoTask+CoreDataProperties.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBC022ECDF5050755739D5AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB7C26A73032979A1143DF4D /* TasksWidget.swift in Sources */,
+				26307FA7732969195B91EF50 /* TasksWidgetBundle.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4BE7DDE5E45E58A3DA134A95 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CF080F38A09698DE1F69A951 /* HouseholdTasksWidget */;
+			targetProxy = AC4078B47BAA5782CA0F0D15 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2B186F6E467B1EE1E870AB78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = ../HouseholdTasksWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.HouseholdTasks.widget;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7E73DC6B38F2602731FDB38A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = ../HouseholdTasksWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.HouseholdTasks.widget;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9AA4AA8DAEA3B7E14A15ED5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = HouseholdTasks.Local.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 983SF5AW8V;
+				INFOPLIST_FILE = Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_SWIFT_FLAGS = "-D LOCAL_ONLY";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.HouseholdTasks;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A236BF0F0AD806212CCD70DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = HouseholdTasks.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 983SF5AW8V;
+				INFOPLIST_FILE = Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.HouseholdTasks;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CA450EDE1921A800372FFF5D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		E5C30130BC3F1DBB31D37D1B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		19C5228533A364EA67E8E7AA /* Build configuration list for PBXProject "HouseholdTasks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA450EDE1921A800372FFF5D /* Debug */,
+				E5C30130BC3F1DBB31D37D1B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		7802395E1215760A386307CF /* Build configuration list for PBXNativeTarget "HouseholdTasks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9AA4AA8DAEA3B7E14A15ED5A /* Debug */,
+				A236BF0F0AD806212CCD70DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		895158A3161B4892FA422A7B /* Build configuration list for PBXNativeTarget "HouseholdTasksWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E73DC6B38F2602731FDB38A /* Debug */,
+				2B186F6E467B1EE1E870AB78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B843D439D17A3A9F0038BEC2 /* HouseholdTasks.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				0A0D0BBAE0BD55313E86F0F7 /* HouseholdTasks.xcdatamodel */,
+			);
+			currentVersion = 0A0D0BBAE0BD55313E86F0F7 /* HouseholdTasks.xcdatamodel */;
+			path = HouseholdTasks.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 1D1510E1CABA8057F295E9C3 /* Project object */;
+}

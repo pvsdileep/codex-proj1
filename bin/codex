@@ -1,0 +1,31 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+# Wrapper to pin Codex CLI to gpt-5 for this repo
+
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]:-$0}")" && pwd)"
+WRAPPER="$SCRIPT_DIR/$(basename "${BASH_SOURCE[0]:-$0}")"
+
+# Find the real codex binary on PATH, excluding this wrapper
+REAL_CLI="$([ -x /usr/bin/which ] && /usr/bin/which -a codex 2>/dev/null | awk -v w="$WRAPPER" '$0!=w{print; exit}')"
+
+if [[ -z "${REAL_CLI:-}" ]]; then
+  echo "Error: could not locate underlying 'codex' binary on PATH." >&2
+  echo "Ensure Codex CLI is installed and available." >&2
+  exit 127
+fi
+
+# Respect an explicit model override if provided
+HAS_MODEL_OVERRIDE="0"
+for arg in "$@"; do
+  case "$arg" in
+    -m|--model|--model=*) HAS_MODEL_OVERRIDE="1"; break ;;
+  esac
+done
+
+if [[ "$HAS_MODEL_OVERRIDE" == "1" ]]; then
+  exec "$REAL_CLI" "$@"
+else
+  exec "$REAL_CLI" -m gpt-5 "$@"
+fi
+

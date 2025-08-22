@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="760" viewBox="0 0 1120 760">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto" markerUnits="strokeWidth">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#444" />
+    </marker>
+    <style>
+      .box { fill:#fff; stroke:#888; stroke-width:1.2; rx:8; ry:8; }
+      .title { font: 700 13px -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial; fill:#111; }
+      .label { font: 12px -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial; fill:#333; }
+      .small { font: 11px -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial; fill:#555; }
+      .group { fill:#f6f7f9; stroke:#e0e3e9; stroke-width:1; rx:10; ry:10; }
+      .arrow { stroke:#444; stroke-width:1.4; fill:none; marker-end:url(#arrow); }
+      .note { font: 10px -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial; fill:#666; }
+    </style>
+  </defs>
+
+  <!-- User -->
+  <circle cx="70" cy="70" r="24" fill="#e8f0fe" stroke="#7aa0ff" stroke-width="1.2"/>
+  <text x="70" y="70" text-anchor="middle" dominant-baseline="central" class="label">User</text>
+
+  <!-- App nodes -->
+  <rect class="box" x="180" y="40" width="160" height="50"/>
+  <text class="title" x="260" y="70" text-anchor="middle">TaskEditView</text>
+
+  <rect class="box" x="180" y="110" width="160" height="50"/>
+  <text class="title" x="260" y="140" text-anchor="middle">TaskRow</text>
+  <text class="small" x="260" y="158" text-anchor="middle">menus & swipes</text>
+
+  <rect class="box" x="180" y="180" width="160" height="50"/>
+  <text class="title" x="260" y="210" text-anchor="middle">MyDayView</text>
+
+  <rect class="box" x="180" y="250" width="160" height="50"/>
+  <text class="title" x="260" y="280" text-anchor="middle">SharedView</text>
+
+  <rect class="box" x="180" y="320" width="160" height="50"/>
+  <text class="title" x="260" y="350" text-anchor="middle">RootView</text>
+
+  <!-- Services -->
+  <rect class="box" x="520" y="60" width="210" height="60"/>
+  <text class="title" x="625" y="88" text-anchor="middle">NotificationScheduler</text>
+  <text class="small" x="625" y="106" text-anchor="middle">snooze, cancel, schedule</text>
+
+  <rect class="box" x="780" y="70" width="210" height="50"/>
+  <text class="title" x="885" y="100" text-anchor="middle">UNUserNotificationCenter</text>
+
+  <rect class="box" x="520" y="220" width="210" height="60"/>
+  <text class="title" x="625" y="248" text-anchor="middle">Core Data</text>
+  <text class="small" x="625" y="266" text-anchor="middle">viewContext, objects</text>
+
+  <rect class="box" x="780" y="210" width="210" height="60"/>
+  <text class="title" x="885" y="238" text-anchor="middle">NSPersistentCloudKitContainer</text>
+
+  <rect class="box" x="1020" y="220" width="80" height="50"/>
+  <text class="title" x="1060" y="246" text-anchor="middle">CloudKit</text>
+
+  <rect class="box" x="520" y="320" width="210" height="50"/>
+  <text class="title" x="625" y="350" text-anchor="middle">UICloudSharingController</text>
+
+  <!-- Widget -->
+  <rect class="box" x="520" y="440" width="210" height="50"/>
+  <text class="title" x="625" y="470" text-anchor="middle">WidgetKit Provider</text>
+
+  <rect class="box" x="780" y="440" width="210" height="50"/>
+  <text class="title" x="885" y="470" text-anchor="middle">TasksWidgetEntryView</text>
+
+  <!-- Arrows and labels -->
+  <path class="arrow" d="M 94 70 L 180 70"/>
+  <text class="small" x="135" y="62">open editor</text>
+
+  <path class="arrow" d="M 340 65 C 400 65 450 65 520 90"/>
+  <text class="small" x="410" y="58">cancel + schedule</text>
+
+  <path class="arrow" d="M 735 95 L 780 95"/>
+  <text class="small" x="758" y="87">requests</text>
+
+  <path class="arrow" d="M 885 120 C 885 145 780 145 780 145"/>
+  <text class="small" x="835" y="140">deliver</text>
+
+  <path class="arrow" d="M 885 120 C 885 150 700 150 700 120"/>
+  <text class="small" x="790" y="132">actions</text>
+
+  <path class="arrow" d="M 340 140 L 520 140"/>
+  <text class="small" x="420" y="132">reschedule</text>
+
+  <path class="arrow" d="M 94 70 C 120 120 150 130 180 135"/>
+  <text class="small" x="130" y="118">list actions</text>
+
+  <path class="arrow" d="M 340 140 C 410 170 450 210 520 250"/>
+  <text class="small" x="420" y="200">complete/priority/assignee</text>
+
+  <path class="arrow" d="M 340 210 L 520 250"/>
+  <text class="small" x="420" y="228">fetch/view</text>
+
+  <path class="arrow" d="M 340 280 L 520 250"/>
+  <text class="small" x="420" y="270">fetch shared</text>
+
+  <path class="arrow" d="M 340 350 L 520 465"/>
+  <text class="small" x="420" y="400">open from widget</text>
+
+  <path class="arrow" d="M 625 110 C 625 165 625 195 625 220"/>
+  <text class="small" x="635" y="180">updates</text>
+
+  <path class="arrow" d="M 730 250 L 780 240"/>
+  <text class="small" x="755" y="230">sync</text>
+
+  <path class="arrow" d="M 990 240 L 1020 245"/>
+  <text class="small" x="1005" y="230">push</text>
+
+  <path class="arrow" d="M 340 280 L 520 335"/>
+  <text class="small" x="418" y="318">Share List</text>
+
+  <path class="arrow" d="M 730 345 L 780 240"/>
+  <text class="small" x="740" y="300">share([list])</text>
+
+  <path class="arrow" d="M 730 465 L 780 465"/>
+  <text class="small" x="755" y="457">entries</text>
+
+  <path class="arrow" d="M 990 465 C 1030 465 1030 510 930 510 C 860 510 800 510 780 510"/>
+  <text class="small" x="930" y="500">deep link</text>
+
+  <path class="arrow" d="M 260 320 C 260 420 260 420 260 420"/>
+  <path class="arrow" d="M 260 420 C 350 420 350 350 430 350 C 520 350 520 470 520 470"/>
+  <text class="small" x="350" y="410">switch to My Day</text>
+
+  <!-- Legend -->
+  <rect x="40" y="560" width="1040" height="150" class="group"/>
+  <text class="title" x="60" y="585">Legend</text>
+  <text class="label" x="60" y="605">• Create/Edit: TaskEditView saves to Core Data, cancels existing reminders, and schedules a new one via NotificationScheduler.</text>
+  <text class="label" x="60" y="625">• In-list actions: TaskRow updates Core Data (complete/priority/assignee) and can move/snooze, rescheduling reminders.</text>
+  <text class="label" x="60" y="645">• Notifications: UNUserNotificationCenter delivers; actions route back through NotificationScheduler to update Core Data.</text>
+  <text class="label" x="60" y="665">• Sync: Core Data changes sync via NSPersistentCloudKitContainer to CloudKit.</text>
+  <text class="label" x="60" y="685">• Widget: Provider supplies entries; tapping widget deep-links into RootView which switches to My Day.</text>
+</svg>
+
