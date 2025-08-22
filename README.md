@@ -1,6 +1,9 @@
-# Project Tooling
+# codex-proj1
+First codex project
 
-## Codex CLI
+## Project Tooling
+
+### Codex CLI
 - Wrapper: `./bin/codex` pins the model to `gpt-5` for this repo.
 - Override per-run: pass `-m`/`--model` (wrapper respects overrides).
 - Make target: `make codex ARGS="..."` runs the wrapper with arguments.
