@@ -7,7 +7,7 @@ struct TaskRow: View {
 
     var body: some View {
         HStack {
-            Button(action: { task.isCompleted.toggle(); try? ctx.save() }) {
+            Button(action: toggleCompleted) {
                 Image(systemName: task.isCompleted ? "checkmark.circle.fill" : "circle")
                     .font(.title3)
             }
@@ -62,7 +62,7 @@ struct TaskRow: View {
             Button { setPriority(.low) } label: { Label("Low", systemImage: "exclamationmark") }.tint(.green)
         }
         .swipeActions(edge: .leading, allowsFullSwipe: true) {
-            Button { task.isCompleted.toggle(); try? ctx.save() } label: { Label("Done", systemImage: "checkmark") }.tint(.blue)
+            Button(action: toggleCompleted) { Label("Done", systemImage: "checkmark") }.tint(.blue)
         }
     }
 
@@ -74,6 +74,16 @@ struct TaskRow: View {
     private func setAssignee(_ a: String) {
         task.assignee = a
         try? ctx.save()
+    }
+
+    private func toggleCompleted() {
+        task.isCompleted.toggle()
+        try? ctx.save()
+        if task.isCompleted {
+            NotificationScheduler.shared.cancelNotifications(for: task)
+        } else if task.dueAt != nil {
+            NotificationScheduler.shared.schedule(task: task)
+        }
     }
 
     // MARK: - Move to time buckets

@@ -1,5 +1,6 @@
 import WidgetKit
 import SwiftUI
+import CoreData
 
 struct TasksEntry: TimelineEntry {
     let date: Date
@@ -19,12 +20,11 @@ struct Provider: TimelineProvider {
     }
 
     func getSnapshot(in context: Context, completion: @escaping (TasksEntry) -> Void) {
-        completion(TasksEntry(date: Date(), items: sample))
+        completion(TasksEntry(date: Date(), items: fetchTasks()))
     }
 
     func getTimeline(in context: Context, completion: @escaping (Timeline<TasksEntry>) -> Void) {
-        // TODO: Replace with shared-store fetch via App Group
-        let entry = TasksEntry(date: Date(), items: sample)
+        let entry = TasksEntry(date: Date(), items: fetchTasks())
         let next = Calendar.current.date(byAdding: .minute, value: 15, to: Date()) ?? Date().addingTimeInterval(900)
         completion(Timeline(entries: [entry], policy: .after(next)))
     }
@@ -35,6 +35,34 @@ struct Provider: TimelineProvider {
             .init(title: "Dinner prep", time: "7:30 PM", priority: 1),
             .init(title: "Water plants", time: "8:00 PM", priority: 0)
         ]
+    }
+
+    private func fetchTasks() -> [TasksEntry.Item] {
+        guard let storeURL = FileManager.default
+            .containerURL(forSecurityApplicationGroupIdentifier: "group.com.yourcompany.householdtasks")?
+            .appendingPathComponent("HouseholdTasks.sqlite") else { return [] }
+
+        let desc = NSPersistentStoreDescription(url: storeURL)
+        let container = NSPersistentContainer(name: "HouseholdTasks")
+        container.persistentStoreDescriptions = [desc]
+        container.loadPersistentStores(completionHandler: { _, _ in })
+
+        let context = container.viewContext
+        let req = NSFetchRequest<NSManagedObject>(entityName: "TodoTask")
+        req.predicate = NSPredicate(format: "isCompleted == NO AND dueAt != nil")
+        req.sortDescriptors = [NSSortDescriptor(key: "dueAt", ascending: true)]
+        req.fetchLimit = 5
+
+        let formatter = DateFormatter()
+        formatter.timeStyle = .short
+
+        let tasks = (try? context.fetch(req)) ?? []
+        return tasks.map { obj in
+            let title = obj.value(forKey: "title") as? String ?? "Task"
+            let due = obj.value(forKey: "dueAt") as? Date ?? Date()
+            let priority = obj.value(forKey: "priority") as? Int ?? 0
+            return TasksEntry.Item(title: title, time: formatter.string(from: due), priority: priority)
+        }
     }
 }
 
